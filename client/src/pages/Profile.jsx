@@ -49,6 +49,8 @@ const Profile = () => {
 
   const handleFileUpload = (file) => {
     const storage = getStorage(app);
+    console.log("this is the avatar file info: ");
+    console.log(file);
     const fileName = new Date().getTime() + file.name;
     const storageRef = ref(storage, fileName);
     const uploadTask = uploadBytesResumable(storageRef, file);
