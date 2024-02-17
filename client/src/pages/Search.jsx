@@ -17,8 +17,8 @@ const Search = () => {
 
   const [loading, setLoading] = useState(false);
   const [listings, setListings] = useState([]);
-  //console.log(listings);
-  const [showMore, setShowMore] = useState(false);
+  console.log(listings);
+  const [showMore, setShowMore] = useState(true);
 
   useEffect(() => {
     const urlParams = new URLSearchParams(location.search);
